@@ -1,6 +1,6 @@
 import React from 'react';
 import ProductItem from '../components/ProducItem';
-import useGetProducts from '../../hooks/useGetProduct';
+import useGetProducts from '../hooks/useGetProducts';
 import '../styles/ProductList.scss';
 
 
@@ -14,10 +14,10 @@ const ProductList = () => {
         <div className="ProductList">
             {products.map(product => ( 
                 < ProductItem  product={product} key={product.id}/>
-//a la hora de iterar con una API en ract empleamos un metodo "key" el cual nos permite 
-//identrificar que elemento del 'virtual DOM' se esta crando de forma dinamica.
-//'product' es una iteracion que expresa el metodo '.map' el cual itera con el arreglo 
-//que alamcena la data de la API requerida.
+//a la hora de iterar con una API en React empleamos un metodo "key" el cual nos permite 
+//identificar que elemento del 'virtual DOM' se esta creando de forma dinamica.
+//'product' es una arreglo que  expresa el metodo '.map' el cual itera con el arreglo 
+//que almacena la data de la API requerida.
 
             ))}  
         </div>

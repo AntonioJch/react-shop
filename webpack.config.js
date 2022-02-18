@@ -82,6 +82,7 @@ module: {// aqui definimos las reglas que vamos a crear don nuestros 'loaders'
 },
 plugins: [//aqui vamos a agregar los plugins que ya hemos instalar con 'npm'
     new HtmlWebpackPlugin({
+        
         template: './public/index.html',
         filename: './index.html'
     }),
