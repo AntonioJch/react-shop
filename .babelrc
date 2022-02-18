@@ -1,0 +1,18 @@
+/** 
+* Aqui agregamos la configuracion que vamos a utilizar para que babael
+* pueda reconocer los 'preset' que acabamos de instalar:
+*
+*  "@babel/preset-env": Para tener todas las bondades de JS moderno.
+*  "@babel/preset-react"> Para trabajar con las bondades de React 
+*   "sintaxis entre otros elementos"
+*/
+
+{
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        "@babel/plugin-transform-runtime"
+    ]
+}
